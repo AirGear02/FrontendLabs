@@ -4,33 +4,30 @@ export default class Element
         
 
         //Creating text element
-        this.textElement = document.createElement('input');
-        this.textElement.setAttribute('type', 'text');
-        this.textElement.readOnly = true;
+        this.textElement = document.createElement('label');
+    
+
         
         //Creating delete button
         this.deleteBtn = document.createElement('button');
-        this.deleteBtn.value = "X";
-        this.deleteBtn.onclick = this.remove;
+        this.deleteBtn.textContent = "X";
+        
 
         //Wrapping elements 
         this.wrapper = document.createElement('div');
         this.wrapper.appendChild(this.textElement);
         this.wrapper.appendChild(this.deleteBtn);
+
+        
+        this.deleteBtn.onclick = () => this.wrapper.remove();
+        this.render = parentNode => parentNode.appendChild(this.wrapper);
+
+
+        this.abc = 2;
     }
 
 
-    render(parentNode) {
-        parentNode.appendChild(this.wrapper);
-    }
-
-    remove() {
-        this.wrapper.remove();
-    }
-
-    getValue() {
-        return this.textElement.value;
-    }
+    //render = parentNode => parentNode.appendChild(this.wrapper);
     
 
 }

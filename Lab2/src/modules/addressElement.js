@@ -1,16 +1,16 @@
-import Element from 'element'
+import Element from './element'
 
-export class AddressElement extends Element{
+export default class AddressElement extends Element{
     
     constructor(value) {
 
-        console.log('123213');
         super();
-        this.textELement.value = value;
-        this.textELement.onChange = validate();
+        this.textElement.textContent = value;
+        this.textElement.onChange = this.validate();
+        this.wrapper.className = "address_wrapper"
     }
 
-    validate() {
-        this.isValid = this.textELement.value.length > 5;
+    validate() {   
+        this.isValid = this.textElement.textContent.length > 5;
     }
 }
