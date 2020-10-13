@@ -1,15 +1,11 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-.addressItem label {
-    display: inline-block;
-    width: 300px;
-   
-}
 
 .phoneNumItem {
     width: fit-content;
     position: relative;
+    margin: 0 15px;
 }
 
 .phoneNumItem button {
@@ -27,11 +23,11 @@ body {
 
 .addressItem {
     border-bottom: 2px solid gray;
-    width: fit-content;
     padding: 5px;
+    display: flex;
+    justify-content: space-between;
+
 }
-
-
 
 .addressItem button {
     border: 0;
@@ -47,18 +43,27 @@ body {
 }
 
 
-.adder_wrapper button {
-    width: 60px;
-    height: 30px;
+
+.itemAdder button {
+    width: 10%;
+    margin-left: 2%;
     background-color: black;
     color: white;
+    height: 2.6vh;
+    border-radius: 5px;
 
 }
 
-.adder_wrapper button {
-    width: 200px;
-    height: 30px;
+.itemAdder input {
+    width: 55%;
+    height: 2vh;
 }
+.itemAdder {
+    text-align: right;
+    margin: 10px;
+    width: 95%;
+}
+
 
 
 /*--------------Form Styling-------------*/
@@ -93,12 +98,53 @@ body {
     display: inline-block;
 }
 
-.PhoneElemWrapper {
+
+.AddressWrapper >.inner{
     display: flex;
 }
 
-.PhoneElemWrapper label {
-    
+.AddressWrapper > .inner  > label{
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    padding-left: 3%;
+}
+
+.AddressWrapper > .inner > .itemsWrapper, .PhoneElemWrapper  > .inner > .itemsWrapper{
+    width: 67%;
+    margin-right: 10px;
+    text-align: justify;
 }
 
 
+.PhoneElemWrapper > .inner  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.PhoneElemWrapper > .inner  {
+    display: flex;
+    justify-content: space-between;
+}
+.PhoneElemWrapper > .inner  > label {
+    
+    display: inline-block;
+    margin-left: 3%;
+}
+
+.PhoneElemWrapper  > .inner > .itemsWrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: small;
+}
+
+.formWrapper > button {
+    border: 0;
+    border-radius: 5px;
+    width: 15%;
+    margin-left: 2%;
+    background-color: black;
+    color: white;
+    height: 3vh;
+}
