@@ -1,15 +1,18 @@
-.address_wrapper label {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.addressItem label {
     display: inline-block;
     width: 300px;
    
 }
 
-.phone_wrapper {
+.phoneNumItem {
     width: fit-content;
     position: relative;
 }
 
-.phone_wrapper button {
+.phoneNumItem button {
     position: absolute;
     background-color: inherit;
     border: 1px solid white;
@@ -17,12 +20,12 @@
     font-size: 10px;
 }
 
-.phone_wrapper button:hover {
+.phoneNumItem button:hover {
     border: 1px solid;
 }
 
 
-.address_wrapper {
+.addressItem {
     border-bottom: 2px solid gray;
     width: fit-content;
     padding: 5px;
@@ -30,14 +33,14 @@
 
 
 
-.address_wrapper button {
+.addressItem button {
     border: 0;
     background-color: inherit;
     border: 1px solid white;
     box-sizing: border-box;
 }
 
-.address_wrapper button:hover {
+.addressItem button:hover {
     border: 1px solid;
     box-sizing: border-box;
     cursor: pointer;
@@ -56,3 +59,46 @@
     width: 200px;
     height: 30px;
 }
+
+
+/*--------------Form Styling-------------*/
+
+.formWrapper {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.formWrapper > label {
+    font-size: x-large;
+    color: darkgray;
+    display: block;
+
+}
+
+.inlineElement {
+    margin: 10px;
+}
+
+.inlineElement input {
+    width: 67%;
+    height: 2vh;
+}
+
+.inlineElement label {
+    text-align: left;
+    width: 30%;
+    display: inline-block;
+}
+
+.PhoneElemWrapper {
+    display: flex;
+}
+
+.PhoneElemWrapper label {
+    
+}
+
+

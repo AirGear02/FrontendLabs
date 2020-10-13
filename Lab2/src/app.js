@@ -1,26 +1,14 @@
-import PhoneNumberElelement from './modules/phoneNumberElement';
-import AddressElement from './modules/addressElement';
-import ElementCreator from './modules/elementCreator';
-import TextElement from './modules/textElement';
-import DateElement from './modules/dateElement';
+import PhoneNumberElelement from './modules/phoneNumberList';
+import AddressElement from './modules/addressList';
+import InlineElement from './modules/inlineElement';
+import RegistrationForm from './modules/registrationForm';
 
-const  phone  = new PhoneNumberElelement('123221');
-const adress = new AddressElement("4545454");
-const date = new TextElement();
-const text = new DateElement();
+const  form = new RegistrationForm('Form', 'formWrapper');
+
+
+
 const node = document.querySelector('#main');
-
-
-const creatorOnClick = (value) => {
-    const new_phone = new AddressElement(value);
-    new_phone.render(node)
-}
-const creator = new ElementCreator(creatorOnClick);
+form.render(node);
 
 
 
-phone.render(node);
-adress.render(node);
-creator.render(node);
-date.render(node);
-text.render(node);
