@@ -7,10 +7,15 @@ export default class AddressElement extends Element{
         super();
         this.textElement.textContent = value;
         this.textElement.onChange = this.validate();
-        this.wrapper.className = "address_wrapper"
+        this.wrapper.className = "address_wrapper";
+        this.isValid = false;
     }
 
-    validate() {   
+    validate() {
+
+        console.log(this.isValid)
         this.isValid = this.textElement.textContent.length > 5;
     }
+
+
 }

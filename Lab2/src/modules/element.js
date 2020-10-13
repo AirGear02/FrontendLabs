@@ -1,9 +1,6 @@
 export default class Element
 {
     constructor() {
-        
-
-        //Creating text element
         this.textElement = document.createElement('label');
     
 
@@ -22,8 +19,6 @@ export default class Element
         this.deleteBtn.onclick = () => this.wrapper.remove();
         this.render = parentNode => parentNode.appendChild(this.wrapper);
 
-
-        this.abc = 2;
     }
 
 
