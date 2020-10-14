@@ -17,8 +17,8 @@ export default class RegistrationForm {
         this.name = new InlineElement('text', 'First Name', this.checkString);
         this.surname = new InlineElement('text', 'Last Name', this.checkString);
         this.birthday = new InlineElement('date', 'Date of birth', this.checkDate);
-        this.addresses = new AddressList( 'PhoneElemWrapper', 'Addresses');
-        this.phones = new PhoneNumberList('AddressWrapper', 'Phone\nnumbers');
+        this.addresses = new AddressList( 'AddressWrapper', 'Addresses');
+        this.phones = new PhoneNumberList('PhoneElemWrapper', 'Phone Numbers');
 
         this.submit = document.createElement('button');
         this.submit.textContent = 'submit';
