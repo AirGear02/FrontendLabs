@@ -41,6 +41,15 @@ body {
     box-sizing: border-box;
     cursor: pointer;
 }
+.itemAdder button:disabled {
+    width: 10%;
+    margin-left: 2%;
+    background-color: gray;
+    color: white;
+    height: 2.6vh;
+    border-radius: 5px;
+  
+  }
 
 
 
