@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import AddressList from './addressList';
 import PhoneList from './phoneList';
 import InlineElement from './inlineElement';
@@ -26,6 +26,7 @@ export default function RegisterForm({wrapperClassName}) {
         return listErrors.length === 0;
     }
 
+    
 
     const firstNameChange = value => setFirstName(() => value);
     const lastNameChange = value => setLastName(() => value);
